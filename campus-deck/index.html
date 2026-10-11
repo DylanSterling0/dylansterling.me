@@ -88,7 +88,7 @@
   body.low-power canvas.ascii-bg{display:none!important}
 
   /* ============ Deck 容器 + 翻页 ============ */
-  #deck{position:fixed;inset:0;width:10000vw;height:100vh;display:flex;flex-wrap:nowrap;transition:transform .9s cubic-bezier(.77,0,.175,1);z-index:10;will-change:transform}
+  #deck{position:fixed;inset:0;width:10000vw;height:100vh;display:flex;flex-wrap:nowrap;transition:transform .75s cubic-bezier(.77,0,.175,1);z-index:10;will-change:transform}
   .slide{
     width:100vw;height:100vh;flex:0 0 100vw;
     position:relative;
@@ -1229,7 +1229,7 @@
      页面骨架参考 references/layouts-swiss.md
      主题色配置参考 references/themes-swiss.md
      ============================================================ -->
-<section class="slide accent" data-animate="hero" data-slide-id="cover" data-layout="SWISS-COVER-ASCII">
+<section class="slide accent" data-animate="stagger" data-slide-id="cover" data-layout="SWISS-COVER-ASCII">
   <div class="canvas-card">
     <canvas class="ascii-bg" aria-hidden="true"></canvas>
     <div class="chrome-min">
@@ -1250,7 +1250,7 @@
   </div>
 </section>
 
-<section class="slide split" data-animate="split-statement" data-slide-id="pain" data-layout="S03">
+<section class="slide split" data-animate="stagger" data-slide-id="pain" data-layout="S03">
   <div class="canvas-card">
     <div class="split-half">
       <div class="half b-accent" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between;position:relative;overflow:hidden">
@@ -1301,7 +1301,7 @@
   </div>
 </section>
 
-<section class="slide" data-animate="grid-reveal" data-slide-id="features" data-layout="S04">
+<section class="slide" data-animate="stagger" data-slide-id="features" data-layout="S04">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">产品功能</div>
@@ -1345,7 +1345,7 @@
   </div>
 </section>
 
-<section class="slide" data-animate="bar-grow" data-slide-id="matching" data-layout="S07">
+<section class="slide" data-animate="stagger" data-slide-id="matching" data-layout="S07">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">智能匹配算法</div>
@@ -1353,7 +1353,7 @@
     </div>
     <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:5vh">
       <h2 data-anim="head" style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.6vw,8vh);line-height:1.02;letter-spacing:-.02em;color:var(--text-primary)">四维加权评分</h2>
-      <div style="display:flex;flex-direction:column;gap:3.4vh;max-width:76ch">
+      <div data-anim="item" style="display:flex;flex-direction:column;gap:3.4vh;max-width:76ch">
         <div class="bar-row"><div class="bar-label">类别 · Category</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-value">30%</div></div>
         <div class="bar-row"><div class="bar-label">描述 · Description</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-value">30%</div></div>
         <div class="bar-row"><div class="bar-label">地点 · Location</div><div class="bar-track"><div class="bar-fill" style="width:83%"></div></div><div class="bar-value">25%</div></div>
@@ -1366,7 +1366,7 @@
   </div>
 </section>
 
-<section class="slide" data-animate="stack-build" data-slide-id="architecture" data-layout="S05">
+<section class="slide" data-animate="stagger" data-slide-id="architecture" data-layout="S05">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">系统架构</div>
@@ -1374,7 +1374,7 @@
     </div>
     <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:4vh">
       <h2 data-anim="head" style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.6vw,8vh);line-height:1.02;letter-spacing:-.02em;color:var(--text-primary)">四层结构</h2>
-      <div style="display:flex;flex-direction:column;gap:0">
+      <div data-anim="item" style="display:flex;flex-direction:column;gap:0">
         <div class="stack-block" style="display:grid;grid-template-columns:auto 1fr;gap:2vw;align-items:start;padding:2.8vh 0;border-top:1px solid var(--border-subtle)">
           <div style="font-family:var(--sans);font-weight:200;font-size:min(4vw,7vh);line-height:.9;color:var(--accent)">01</div>
           <div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(20px,1.8vw);color:var(--text-primary);margin-bottom:.6vh">用户界面层</h3><p style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,.94vw);color:var(--text-secondary)">HTML · CSS · JavaScript（浏览器端页面与交互）</p></div>
@@ -1396,7 +1396,7 @@
   </div>
 </section>
 
-<section class="slide" data-animate="four-cards" data-slide-id="tech" data-layout="S19">
+<section class="slide" data-animate="stagger" data-slide-id="tech" data-layout="S19">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">技术选型</div>
@@ -1430,7 +1430,7 @@
   </div>
 </section>
 
-<section class="slide" data-animate="timeline-walk" data-slide-id="plan" data-layout="S11">
+<section class="slide" data-animate="stagger" data-slide-id="plan" data-layout="S11">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">实施计划</div>
@@ -1438,7 +1438,7 @@
     </div>
     <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:6vh">
       <h2 data-anim="head" style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.6vw,8vh);line-height:1.02;letter-spacing:-.02em;color:var(--text-primary)">四个阶段</h2>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;position:relative">
+      <div data-anim="item" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;position:relative">
         <div style="position:absolute;top:12px;left:4%;right:4%;height:1px;background:var(--border-strong)"></div>
         <div style="position:relative"><div style="width:12px;height:12px;background:var(--accent);position:absolute;top:6px;left:0"></div><div class="t-meta" style="color:var(--accent);margin-top:34px">第 1–2 周</div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(19px,1.5vw);color:var(--text-primary);margin:1.2vh 0 .6vh">需求分析</h3><p style="font-family:var(--sans),var(--sans-zh);font-size:max(14px,.88vw);line-height:1.55;color:var(--text-secondary)">调研痛点，确定功能与流程</p></div>
         <div style="position:relative"><div style="width:12px;height:12px;background:var(--accent);position:absolute;top:6px;left:0"></div><div class="t-meta" style="color:var(--accent);margin-top:34px">第 3–6 周</div><h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(19px,1.5vw);color:var(--text-primary);margin:1.2vh 0 .6vh">基础开发</h3><p style="font-family:var(--sans),var(--sans-zh);font-size:max(14px,.88vw);line-height:1.55;color:var(--text-secondary)">前端页面、后端接口、数据库</p></div>
@@ -1449,7 +1449,7 @@
   </div>
 </section>
 
-<section class="slide" data-animate="duo-mirror" data-slide-id="compare" data-layout="S08">
+<section class="slide" data-animate="stagger" data-slide-id="compare" data-layout="S08">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">价值对比</div>
@@ -1457,7 +1457,7 @@
     </div>
     <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:4vh">
       <h2 data-anim="head" style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.6vw,8vh);line-height:1.02;letter-spacing:-.02em;color:var(--text-primary)">传统方式与校园智寻</h2>
-      <div class="duo-compare" style="margin-top:4vh">
+      <div class="duo-compare" data-anim="item" style="margin-top:4vh">
         <div style="display:flex;flex-direction:column;gap:2.6vh">
           <div class="t-meta" style="color:var(--text-helper)">BEFORE</div>
           <h3 style="font-family:var(--sans),var(--sans-zh);font-weight:400;font-size:max(22px,2vw);color:var(--text-primary)">传统渠道</h3>
@@ -1484,7 +1484,7 @@
   </div>
 </section>
 
-<section class="slide" data-animate="four-cards" data-slide-id="innovation" data-layout="S19">
+<section class="slide" data-animate="stagger" data-slide-id="innovation" data-layout="S19">
   <div class="canvas-card">
     <div class="chrome-min">
       <div class="l">项目创新点</div>
@@ -1518,7 +1518,7 @@
   </div>
 </section>
 
-<section class="slide split" data-animate="split-statement" data-slide-id="closing" data-layout="SWISS-CLOSING-ASCII">
+<section class="slide split" data-animate="stagger" data-slide-id="closing" data-layout="SWISS-CLOSING-ASCII">
   <div class="canvas-card">
     <div class="split-half">
       <div class="half b-accent" style="padding:5.6vh 3.6vw 4.4vh;justify-content:space-between;position:relative;overflow:hidden">
@@ -1807,7 +1807,7 @@ function go(n,opts={}){
   const isDark = el.classList.contains('dark') || el.classList.contains('accent');
   document.body.classList.toggle('dark-bg', isDark);
   darkMode = isDark;
-  if(window.__playSlide) setTimeout(()=>window.__playSlide(idx), 450);
+  if(window.__playSlide) setTimeout(()=>window.__playSlide(idx), 300);
   window.__pptPresenter?.onSlideChange(idx);
   if(!opts.force){lock=true;setTimeout(()=>lock=false,700);}
 }
